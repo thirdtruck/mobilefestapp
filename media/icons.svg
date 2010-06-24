@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="309.17929"
+     inkscape:cy="558.0372"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="975"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.87264788px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 168.59414,450.1893 C 103.30733,421.29486 -30.431632,274.59969 96.661892,241.93454 c 35.567518,0 70.605168,49.87128 71.932248,49.87128 1.32708,0 32.78836,-50.59501 70.60794,-50.59501 126.94258,43.54948 -3.4703,169.73414 -70.60794,208.97849 z"
+       id="path2816"
+       sodipodi:nodetypes="cczcc"
+       inkscape:export-filename="/home/ubuntu/git_repositories/mobilefestapp/public/images/favorite.png"
+       inkscape:export-xdpi="10.65"
+       inkscape:export-ydpi="10.65" />
+    <path
+       style="fill:#00fcff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-opacity:1"
+       d="m 426.51786,230.375 -48.5,48.5 77.78125,77.78125 -77.78125,77.78125 48.5,48.46875 77.78125,-77.78125 77.78125,77.78125 48.46875,-48.46875 -77.78125,-77.78125 77.78125,-77.78125 -48.46875,-48.5 -77.78125,77.78125 -77.78125,-77.78125 z"
+       id="rect2819"
+       inkscape:export-filename="/home/ubuntu/git_repositories/mobilefestapp/public/images/delete.png"
+       inkscape:export-xdpi="10.65"
+       inkscape:export-ydpi="10.65" />
+  </g>
+</svg>

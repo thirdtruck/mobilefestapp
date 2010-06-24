@@ -55,6 +55,11 @@ a img { border: none; }
 
 /* ---- Custom - Events ---- */
 
+.events.by-day {
+	font-size: 25px;
+	line-height: 28px;
+}
+
 .events h2 {
 	font-size: 120%;
 	color: hsl( 0, 0%, 70%  );
@@ -62,26 +67,25 @@ a img { border: none; }
 	border-bottom: 1px solid hsl( 0, 0%, 70%  );
 }
 .event {
-	width: 320px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border: 1px solid black;
 	margin-bottom: 0.5em;
-	height: 65px;
+	height: 100px;
 }
 .event .button {
-	height: 55px;
+	height: 90px;
 	padding: 5px;
 }
 .event .button .icon {
-	margin-top: 15px;
+	margin-top: 2px;
 }
-.event .favorite {
+.event .button.left {
 	float: left;
 	margin-right: 10px;
 	border-right: 1px solid black;
 }
-.event .delete {
+.event .button.right {
 	float: right;
 	margin-left: 10px;
 	border-left: 1px solid black;
@@ -96,7 +100,7 @@ a img { border: none; }
 .event .info .time {
 	float: right;
 	text-align: right;
-	width: 80px;
+	width: 200px;
 	font-weight: bold;
 	font-size: 120%;
 	color: hsl( 0, 100%, 60% );

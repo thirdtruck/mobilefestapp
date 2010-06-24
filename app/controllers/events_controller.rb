@@ -10,6 +10,17 @@ class EventsController < ApplicationController
     end
   end
 
+  # GET /events/by_day
+  # GET /events/by_day.xml
+  def by_day
+    @events = Event.find(:all)
+
+    respond_to do |format|
+      format.html # by_day.html.erb
+      format.xml  { render :xml => @events }
+    end
+  end
+
   # GET /events/1
   # GET /events/1.xml
   def show

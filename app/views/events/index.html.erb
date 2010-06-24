@@ -1,5 +1,14 @@
 <h1>Listing events</h1>
 
+<% for day in ['Thursday', 'Friday', 'Saturday', 'Sunday'] %>
+<h2><%=h day %></h2>
+
+<% for event in Event.find(:all, :conditions => { :date => day }) %>
+	<p><%=h event.time %>.  Film: <strong><%= event.name %></strong> (<%=h event.location %>) <%=h event.cost %></p>
+<% end %>
+
+<% end %>
+
 <table>
   <tr>
     <th>Name</th>

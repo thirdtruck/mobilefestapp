@@ -73,8 +73,8 @@ a img { border: none; }
 
 	/* Gradient background */
 	background-color: #99FFFE;
-	background-image: -moz-linear-gradient(100% 100% 90deg, #FCFCFF, #99FFFE);
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FCFCFF), to(#99FFFE));
+	background-image: -moz-linear-gradient(100% 100% 70deg, #FCFCFF, #DCFFFE);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FCFCFF), to(#DCFFFE));
 	
 	margin-bottom: 0.5em;
 	height: 100px;
@@ -85,8 +85,8 @@ a img { border: none; }
 	
 	/* Gradient background */
 	background-color: #99FFFE;
-	background-image: -moz-linear-gradient(100% 100% 90deg, #99FFFE, #FCFCFF);
-	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#99FFFE), to(#FCFCFF));
+	background-image: -moz-linear-gradient(100% 100% 70deg, #DCFFFE, #FCFCFF);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DCFFFE), to(#FCFCFF));
 }
 .event .button .icon {
 	margin-top: 2px;

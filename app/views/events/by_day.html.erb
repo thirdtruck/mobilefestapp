@@ -6,7 +6,17 @@
 		<div class="event">
 			<div class="button favorite"><a href="#"><img class="icon" src="/images/favorite.png" alt="Favorite" /></a></div>
 			<div class="button delete"><a href="#"><img class="icon" src="/images/delete.png" alt="Delete" /></a></div>
-		<div class="info"><%=h event.time %>.  Film: <strong><%= event.name %></strong> (<%=h event.location %>) <%=h event.cost %></div>
+			<div class="info">
+				<div class="time"><%= event.time %></div>
+				<div class="name"><%= event.name %></div>
+				<div class="location"><%= event.location %></div>
+				<!--
+				<div class="clear"></div>
+				-->
+				<!--
+				<div class="cost"><%= event.cost %></div>
+				-->
+			</div>
 		</div>
 	<% end %>
 

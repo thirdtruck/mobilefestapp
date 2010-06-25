@@ -88,3 +88,22 @@ a img { border: none; }
 }
 .event .info {
 }
+.event .info .name {
+	width: 155px;
+}
+.event .info .time {
+	float: right;
+	text-align: right;
+	width: 80px;
+}
+.event .info .location {
+}
+.event .info .cost {
+	float: right;
+	text-align: right;
+	width: 125px;
+}
+
+.clear {
+	clear: both;
+}

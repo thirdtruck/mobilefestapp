@@ -67,15 +67,20 @@ a:hover { color: #fff; background-color:#000; }
 	border: 1px solid black;
 	margin-bottom: 0.5em;
 }
+.event .button {
+	width: 30px;
+	height: 100%;
+}
+.event .button .icon {
+	width: 30px;
+}
 .event .favorite {
 	float: left;
-	width: 30px;
 	margin-right: 10px;
 	border-right: 1px solid black;
 }
 .event .delete {
 	float: right;
-	width: 30px;
 	margin-left: 10px;
 	border-left: 1px solid black;
 }

@@ -87,16 +87,24 @@ a img { border: none; }
 	border-left: 1px solid black;
 }
 .event .info {
+	padding-top: 4px;
 }
 .event .info .name {
-	width: 155px;
+	font-weight: bold;
+	font-size: 120%;
 }
 .event .info .time {
 	float: right;
 	text-align: right;
 	width: 80px;
+	font-weight: bold;
+	font-size: 120%;
+	color: hsl( 0, 100%, 60% );
 }
 .event .info .location {
+	font-size: 80%;
+	font-style: italic;
+	color: hsl( 0, 0%, 40% );
 }
 .event .info .cost {
 	float: right;

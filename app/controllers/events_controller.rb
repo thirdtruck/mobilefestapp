@@ -13,9 +13,15 @@ class EventsController < ApplicationController
   # GET /events/by_day
   # GET /events/by_day.xml
   def by_day
+    max_events = 10
+    
     @today = Time.new.strftime("%A")
-    @events = Event.find(:all, :conditions => { :date => @today.upcase }).sort_by { |event| event.start_time }
-    @events = @events.first(10)
+    
+    all_events = Event.all_after_now_today
+    
+    @and_more_later = all_events.length > max_events ? true : false
+    @events = all_events.first(max_events)
+    @events = all_events
 
     respond_to do |format|
       format.html # by_day.html.erb

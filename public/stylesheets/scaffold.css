@@ -58,6 +58,11 @@ a img { border: none; }
 .events.by-day {
 	font-size: 25px;
 	line-height: 28px;
+	
+	/* Gradient background */
+	background-color: #99FFFE;
+	background-image: -moz-linear-gradient(100% 100% 180deg, #99FFFE, #FCFCFF);
+	background-image: -webkit-gradient(linear, left 0%, right 100%, from(#99FFFE), to(#FCFCFF));
 }
 .events h2 {
 	font-size: 120%;

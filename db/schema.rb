@@ -12,13 +12,17 @@
 ActiveRecord::Schema.define(:version => 20100623233214) do
 
   create_table "events", :force => true do |t|
-    t.string   "name"
-    t.string   "date"
-    t.string   "time"
-    t.string   "location"
-    t.string   "cost"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string "name"
+    t.string "date"
+    t.string "time"
+    t.string "location"
+    t.string "cost"
+    t.string "created_at"
+    t.string "updated_at"
+    t.string "start_time"
+    t.string "end_time"
   end
+
+  add_index "events", ["id"], :name => "sqlite_autoindex_events_1", :unique => true
 
 end

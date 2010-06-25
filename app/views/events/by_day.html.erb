@@ -1,8 +1,8 @@
 <div class="events by-day">
-	<% for day in ['Thursday', 'Friday', 'Saturday', 'Sunday'] %>
+	<% for day in ['Friday', 'Saturday', 'Sunday'] %>
 	<h2><%=h day %></h2>
 
-	<% for event in Event.find(:all, :conditions => { :date => day }) %>
+	<% for event in Event.find(:all, :conditions => { :date => day.upcase }) %>
 		<div class="event">
 			<div class="button left"><a href="#"><img class="icon" src="/images/ticket.png" alt="Event" /></a></div>
 			<div class="button right"><a href="#"><img class="icon" src="/images/clock.png" alt="Time" /></a></div>

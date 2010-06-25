@@ -11,7 +11,8 @@ class Event < ActiveRecord::Base
         after_now = false
       else
 
-      if start_hour+12 == now.hour and start_minute < now.min:
+      minute_buffer = 15 # Allow a margin of error for shows that have just started.  TODO: list all ongoing shows separately.
+      if start_hour+12 == now.hour and start_minute+minute_buffer < now.min:
         after_now = false
       end
       end

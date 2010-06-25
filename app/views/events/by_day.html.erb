@@ -1,8 +1,7 @@
 <div class="events by-day">
-	<% for day in ['Friday', 'Saturday', 'Sunday'] %>
-	<h2><%=h day %></h2>
+	<h2><%=h @today %></h2>
 
-	<% for event in @events.select { |evt| evt.date == day.upcase } %>
+	<% for event in @events %>
 		<div class="event">
 			<div class="button left"><a href="#"><img class="icon" src="/images/ticket.png" alt="Event" /></a></div>
 			<div class="button right"><a href="#"><img class="icon" src="/images/clock.png" alt="Time" /></a></div>
@@ -18,7 +17,5 @@
 				-->
 			</div>
 		</div>
-	<% end %>
-
 	<% end %>
 </div>

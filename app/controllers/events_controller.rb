@@ -13,8 +13,8 @@ class EventsController < ApplicationController
   # GET /events/by_day
   # GET /events/by_day.xml
   def by_day
-    day = Time.new.strftime("%A").upcase
-    @events = Event.find(:all, :conditions => { :date => day.upcase }).sort_by { |event| event.start_time }
+    @today = Time.new.strftime("%A")
+    @events = Event.find(:all, :conditions => { :date => @today.upcase }).sort_by { |event| event.start_time }
     @events = @events.first(10)
 
     respond_to do |format|

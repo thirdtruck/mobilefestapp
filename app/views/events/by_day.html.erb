@@ -4,8 +4,8 @@
 
 	<% for event in Event.find(:all, :conditions => { :date => day }) %>
 		<div class="event">
-			<div class="button favorite"><img class="icon" src="/images/favorite.png" alt="Favorite" /></div>
-			<div class="button delete"><img class="icon" src="/images/delete.png" alt="Delete" /></div>
+			<div class="button favorite"><a href="#"><img class="icon" src="/images/favorite.png" alt="Favorite" /></a></div>
+			<div class="button delete"><a href="#"><img class="icon" src="/images/delete.png" alt="Delete" /></a></div>
 		<div class="info"><%=h event.time %>.  Film: <strong><%= event.name %></strong> (<%=h event.location %>) <%=h event.cost %></div>
 		</div>
 	<% end %>

@@ -59,7 +59,6 @@ a img { border: none; }
 	font-size: 25px;
 	line-height: 28px;
 }
-
 .events h2 {
 	font-size: 120%;
 	color: hsl( 0, 0%, 70%  );
@@ -67,15 +66,27 @@ a img { border: none; }
 	border-bottom: 1px solid hsl( 0, 0%, 70%  );
 }
 .event {
+	/* Rounded corners */
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
-	border: 1px solid black;
+	border: 1px solid #99FFFE;
+
+	/* Gradient background */
+	background-color: #99FFFE;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #FCFCFF, #99FFFE);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FCFCFF), to(#99FFFE));
+	
 	margin-bottom: 0.5em;
 	height: 100px;
 }
 .event .button {
 	height: 90px;
 	padding: 5px;
+	
+	/* Gradient background */
+	background-color: #99FFFE;
+	background-image: -moz-linear-gradient(100% 100% 90deg, #99FFFE, #FCFCFF);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#99FFFE), to(#FCFCFF));
 }
 .event .button .icon {
 	margin-top: 2px;
@@ -83,12 +94,12 @@ a img { border: none; }
 .event .button.left {
 	float: left;
 	margin-right: 10px;
-	border-right: 1px solid black;
+	border-right: 1px solid #99FFFE;
 }
 .event .button.right {
 	float: right;
 	margin-left: 10px;
-	border-left: 1px solid black;
+	border-left: 1px solid #88EEED;
 }
 .event .info {
 	padding-top: 4px;

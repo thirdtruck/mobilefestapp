@@ -6,20 +6,33 @@ class Event < ActiveRecord::Base
       after_now = true
 
       self.start_time =~ /^0*(\d):(\d\d)/    
-      start_hour = $1.to_i
-      start_minute = $2.to_i
+      @start_hour = $1.to_i
+      @start_minute = $2.to_i
 
-      if start_hour+12 < now_hour: # convert the start time to 24 hour time (they're after noon)
+      if @start_hour+12 < now_hour: # convert the start time to 24 hour time (they're after noon)
         after_now = false
       else
 
-      minute_buffer = 15 # Allow a margin of error for shows that have just started.  TODO: list all ongoing shows separately.
-      if start_hour+12 == now_hour and start_minute+minute_buffer < now.min:
-        after_now = false
+        minute_buffer = 15 # Allow a margin of error for shows that have just started.  TODO: list all ongoing shows separately.
+        if @start_hour+12 == now_hour and @start_minute+minute_buffer < now.min:
+          after_now = false
+        end
       end
-    end
 
       after_now
+    end
+    
+    # TODO: have this return a boolean instead of a an HTML class name
+    def coming_soon
+      Time.zone = "Eastern Time (US & Canada)"
+      now = Time.zone.now
+      now_hour = now.hour
+      
+      if (@start_hour+12) - now_hour < 2: # Add a "not < 0" check
+        "coming-soon"
+      else
+        ""
+      end
     end
     
     def self.all_after_now_today

@@ -6,7 +6,7 @@
 			<div class="button left"><a href="#"><img class="icon" src="/images/ticket.png" alt="Event" /></a></div>
 			<div class="button right"><a href="#"><img class="icon" src="/images/clock.png" alt="Time" /></a></div>
 			<div class="info">
-				<div class="time"><%= event.time %></div>
+				<div class="time <%=h event.coming_soon %>"><%= event.time %></div>
 				<div class="name"><%= event.name %></div>
 				<div class="location">(<%= event.location %>)</div>
 				<!--
@@ -19,6 +19,13 @@
 		</div>
 	<% end %>
 	<% if @and_more_later %>
-		<h2>And look forward to more later tonight...</h2>
+		<h2 id="more-later">And look forward to more later tonight...</h2>
 	<% end %>
+	
+	<div id="footer">
+		<div id="contact">
+			<div class="email">Contact us at <a href="mailto:mobilefestapp@thirdtruck.org">mobilefestapp@thirdtruck.org</a></div>
+			<div class="production">A <em>Third Truck</em> Production</div>
+		</div>
+	</div>
 </div>

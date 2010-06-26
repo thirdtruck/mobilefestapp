@@ -119,6 +119,9 @@ a img { border: none; }
 	width: 200px;
 	font-weight: bold;
 	font-size: 120%;
+	color: hsl( 300, 100%, 30% );
+}
+.event .info .time.coming-soon {
 	color: hsl( 0, 100%, 60% );
 }
 .event .info .location {
@@ -132,6 +135,30 @@ a img { border: none; }
 	width: 125px;
 }
 
+#more-later {
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	border: 0 solid transparent;
+}
+
 .clear {
 	clear: both;
+}
+
+#footer {
+	
+}
+
+#contact {
+	/* Rounded corners */
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 1px solid #99FFFE;
+	
+	padding: 0.7em;
+}
+#contact .by {
+}
+#contact .email {
+	float: right;
 }

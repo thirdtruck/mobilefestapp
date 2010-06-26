@@ -23,7 +23,6 @@ class EventsController < ApplicationController
     
     @and_more_later = all_events.length > max_events ? true : false
     @events = all_events.first(max_events)
-    @events = all_events
 
     respond_to do |format|
       format.html # by_day.html.erb

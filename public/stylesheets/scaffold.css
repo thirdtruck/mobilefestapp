@@ -60,7 +60,7 @@ a img { border: none; }
 	line-height: 28px;
 	
 	/* Gradient background */
-	background-color: #99FFFE;
+	background-color: white;
 	background-image: -moz-linear-gradient(100% 100% 180deg, #CFFFFE, #FCFCFF);
 	background-image: -webkit-gradient(linear, left 0%, right 100%, from(#CFFFFE), to(#FCFCFF));
 }
@@ -77,7 +77,7 @@ a img { border: none; }
 	border: 1px solid #99FFFE;
 
 	/* Gradient background */
-	background-color: #99FFFE;
+	background-color: #FCFFFE;
 	background-image: -moz-linear-gradient(100% 100% 70deg, #FCFCFF, #DCFFFE);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FCFCFF), to(#DCFFFE));
 	
@@ -89,7 +89,7 @@ a img { border: none; }
 	padding: 5px;
 	
 	/* Gradient background */
-	background-color: #99FFFE;
+	background-color: #FCFFFE;
 	background-image: -moz-linear-gradient(100% 100% 70deg, #DCFFFE, #FCFCFF);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#DCFFFE), to(#FCFCFF));
 }

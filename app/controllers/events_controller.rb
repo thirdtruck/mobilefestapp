@@ -15,7 +15,9 @@ class EventsController < ApplicationController
   def by_day
     max_events = 10
     
-    @today = Time.new.strftime("%A")
+    Time.zone = "Eastern Time (US & Canada)"
+    now = Time.zone.now
+    @today = now.strftime("%A")
     
     all_events = Event.all_after_now_today
     
